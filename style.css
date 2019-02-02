@@ -1,0 +1,52 @@
+body {
+	background-color: #B9C7CD;
+}
+
+h3 {
+	color: white;
+	margin-left: 20px;
+}
+
+#hello_header {
+	font-family: "Arial";
+	color: white;
+}
+
+.lst_img {
+	width: 250px;
+	height: 180px;
+}
+
+.about_img {
+	width: 200px;
+	height: 250px;	
+}
+
+.social_img {
+	width: 30px;
+	height: 30px;		
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111111;
+}
