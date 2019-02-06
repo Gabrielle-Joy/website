@@ -15,10 +15,10 @@ body {
 }
 
 .frontend-side {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png");
+  background-image: url("images/website-code.png");
 }
 
-.split-pane {
+.pane {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -31,14 +31,14 @@ body {
 ;
 }
 @media(min-width: 800px) {
-  .split-pane {
+  .pane {
     /*
     padding-top: 2em;*/
     height: 100%;
   }
 }
 
-.split-pane > div {
+.pane > div {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -47,26 +47,26 @@ body {
   text-align: center;
 }
 
-.split-pane > div .text-content {
+.pane > div .text-content {
   line-height: 1.6em;
   margin-bottom: 1em;
 }
 
-.split-pane > div .text-content .big {
+.pane > div .text-content .big {
   font-size: 2em;
   padding: 0.35em;
 }
 
-.split-pane > div img {
+.pane > div img {
   height: 1.3em;
 }
 
 @media (max-width: 600px) {
-  .split-pane > div img {
+  .pane > div img {
     display:none;
   }
 }
-.split-pane button, .split-pane a.button {
+.pane button, .pane a.button {
   font-family: 'Open Sans', sans-serif;
 	font-weight:800;
   background: none;
@@ -87,14 +87,14 @@ body {
 	cursor: pointer;
 }
 
-.split-pane button:hover, .split-pane a.button:hover {
+.pane button:hover, .pane a.button:hover {
   text-decoration: none;
   background-color: white;
   border-color: white;
 	cursor: pointer;
 }
 
-.frontend-side.split-pane button:hover, .split-pane a.button:hover {
+.frontend-side.pane button:hover, .pane a.button:hover {
   color: violet;
 }
 
