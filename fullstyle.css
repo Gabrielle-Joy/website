@@ -12,6 +12,7 @@ html, body {
 
 body {
   margin: 0px;
+  padding: 0;
 }
 
 /* menu */
@@ -20,9 +21,19 @@ nav {
   background: #301642;
 }
 
+.logo img {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 35px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
 ul {
   width: 80%;
   margin: 0 auto;
+  padding: 0px;
 }
 
 ul li {
@@ -46,12 +57,30 @@ ul li a {
 
 .toggle {
   width: 100%;
-  padding: 10px 20 px;
+  padding: 10px 20px;
   background: #1F0022;
   text-align: right;
   box-sizing: border-box;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 30px;
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+  ul {
+    width: 100%;
+    display: none;
+  }
+  ul li {
+    display: block;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
 }
 
 
@@ -104,7 +133,7 @@ ul li a {
   height: 1.3em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600) {
   .pane > div img {
     display:none;
   }
