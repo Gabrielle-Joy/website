@@ -21,12 +21,17 @@ nav {
   background: #301642;
 }
 
+.menubar {
+  font-size: 20px;
+  font-weight:400;
+}
+
 .logo img {
   position: absolute;
-  margin-top: 20px;
-  margin-left: 35px;
-  width: 45px;
-  height: 45px;
+  margin-top: 12px;
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -87,7 +92,7 @@ ul li a {
 /* fullscreen*/
 
 .frontend-side {
-  background-image: url("images/website-code.png");
+  background-image: url("images/taken/website-code.png");
 }
 
 .pane {

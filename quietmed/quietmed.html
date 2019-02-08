@@ -5,19 +5,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<title>Gabrielle's Website</title>
+	<title>QM</title>
+	<link rel="icon" 
+      type="image/png" 
+      href="../images/gj_logo_white.png">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
 </head>
 <body>
-	<div class="pimg1">
+
+	<nav class="menubar">
+		<div class="logo"><a href="../index.html"><img src="../images/gj_logo_white.png"></a></div>
+		<div class="toggle">
+			<i class="fas fa-bars menu"></i>
+		</div>
+		<ul>
+			<li class="menu-item"><a href="../index.html">Home</a></li>
+			<li class="menu-item"><a href="#0">About</a></li>
+			<li class="menu-item"><a href="#0">QM</a></li>
+			<li class="menu-item"><a href="quietmed.html">Impossible List</a></li>
+			<li class="menu-item"><a href="#0">Contact</a></li>
+		</ul>
+	</nav>
+		
+	<div class="paraimg pimg1">
 		<div class="ptext">
-			<span class="border trans">
+			<span class="border-white">
 				Quiet Meditations
 			</span>
 		</div>
 	</div>
 
-	<section class="section section-light">
+	<section class="section section-white">
 		<p>The thoughts as they come</p>
 		<p>The thoughts as they go </p>
 		<p>Will be written here</p>
@@ -25,21 +45,21 @@
 		
 	</section>
 
-	<div class="pimg2">
+	<div class="paraimg pimg2">
 		<div class="ptext">
 			<span class="border trans">
-				Know your worth
+				Perseverance and consistency beats giving up every time
 			</span>
 		</div>
 	</div>
 
-	<section class="section section-dark">
+	<section class="section section-white">
 		<p>
 			The more we fail the harder it is to try again. But the more we fail the closer we are to success.
 		</p>
 	</section>
 
-	<div class="pimg3">
+	<div class="paraimg pimg3">
 		<div class="ptext">
 			<span class="border trans">
 				Slow down and reflect.
@@ -47,13 +67,13 @@
 		</div>
 	</div>
 
-	<section class="section section-light">
+	<section class="section section-white">
 		<p>
 			Be self-aware. Know what you believe in and why.
 		</p>
 	</section>
 
-	<div class="pimg2">
+	<div class="paraimg pimg4">
 			<div class="ptext">
 				<span class="border trans">
 					Know your worth
@@ -61,7 +81,7 @@
 			</div>
 		</div>
 	
-		<section class="section section-dark">
+		<section class="section section-white">
 			<p>Sometimes life comes at us in ways we do not expect.</p> 
 			<p>But if we have a limited view of the world around us,</p>
 			<p>then our expectations are also limited.</p>
@@ -72,7 +92,7 @@
 
 
 
-	<div class="pimg1">
+	<div class="paraimg pimg1">
 		<div class="ptext">
 			<span class="border">
 				Gabrielle Joy
@@ -80,8 +100,13 @@
 		</div>
 	</div>
 
-	<div>
-		<a href="index.html">Home</a>
-	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu').click(function(){
+				$('ul').toggleClass('active')
+			})
+		})
+	</script>
 </body>
 </html>

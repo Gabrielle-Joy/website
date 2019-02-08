@@ -1,14 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
 body, html {
 	height:100%;
 	margin:0;
 	font-size:16px;
-	font-family:"Lato", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	line-height:1.8em;
 	color:#666;
 }
 
-.pimg1, .pimg2, .pimg3{
+/* menu */
+nav {
+	width: 100%;
+	background: #301642;
+  }
+  
+  .menubar {
+	font-size: 20px;
+  }
+  
+  .logo img {
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 40px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+  }
+  
+  ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0px;
+  }
+  
+  ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+  }
+  
+  ul li:hover {
+	background: #FFFFFF;
+  }
+  
+  ul li a:hover {
+	color: #1F0022;
+  }
+  
+  ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+  }
+  
+  .toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #1F0022;
+	text-align: right;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	font-size: 30px;
+	display: none;
+  }
+  
+  @media(max-width: 768px) {
+	.toggle {
+	  display: block;
+	}
+	ul {
+	  width: 100%;
+	  display: none;
+	}
+	ul li {
+	  display: block;
+	  text-align: center;
+	}
+	.active {
+	  display: block;
+	}
+  }
+
+  /* parralax body */
+
+.paraimg{
 	position: relative;
 	opacity: 0.70;
 	background-position: center;
@@ -23,17 +99,22 @@ body, html {
 }
 
 .pimg1{
-	background-image: url('../images/starry.jpg');
+	background-image: url('../images/taken/matt-holmes-1329881-unsplash.jpg');
 	min-height: 100%;
 }
 
 .pimg2{
-	background-image: url('../images/reflect.jpg');
+	background-image: url('../images/taken/jelleke-vanooteghem-1349785-unsplash.jpg');
 	min-height: 400px;
 }
 
 .pimg3{
-	background-image: url('../images/worship1.jpg');
+	background-image: url('../images/taken/habila-mazawaje-1350413-unsplash.jpg');
+	min-height: 400px;
+}
+
+.pimg4{
+	background-image: url('../images/taken/reflect.jpg');
 	min-height: 400px;
 }
 
@@ -42,19 +123,36 @@ body, html {
 	padding: 50px;
 }
 
-.section-light{
-	background-color: #f4f4f4;
-	color:#666;
+.section-white{
+	background-color: #FFFFFF;
+	columns: #000000;;
 }
 
-.section-dark{
-	background-color: #ddd;
+.section-orange{
+	background-color: #FF880D;
+	color:#FFFFFF;
+}
+
+.section-blue{
+	background-color: #0086B2;
+	color:#FFFFFF;
+}
+
+.section-royal-purple{
+	background-color: #833BB5;
+	color:#FFFFFF;
+}
+
+.section-red-purple{
+	background-color: #1F0022;
+	color:#FFFFFF;
 }
 
 .ptext{
 	position: absolute;
 	top: 50%;
 	width:100%;
+	font-weight:400;
 	text-align:center;
 	color: #000;
 	font-size: 27px;
@@ -74,7 +172,7 @@ body, html {
 }
 
 @media(max-width: 568px){
-	.pimg1, .pimg2, .pimg3{
+	.paraimg{
 		background-attachment: scroll;
 	}
 }
